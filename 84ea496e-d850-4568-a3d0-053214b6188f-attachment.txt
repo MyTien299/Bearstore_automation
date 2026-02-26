@@ -1,0 +1,7 @@
+Firstname: dao
+Lastname: tien
+Email: tiennnnn@gmail.com
+Username: tien1234567
+Password: 123456
+ConfirmPassword: 1234567
+Company: TMA

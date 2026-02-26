@@ -1,0 +1,9 @@
+<suite name="BearStore Register Suite" parallel="false">
+
+    <test name="Register Function Test">
+        <packages>
+            <package name="org.example.bearstore.testcase.ui.register"/>
+        </packages>
+
+    </test>
+</suite>
