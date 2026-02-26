@@ -142,7 +142,7 @@ https://bearstore-testsite.smartbear.com/
 
 ## 👤 Author
 
-[Your Name]
+My Tien
 
 ## 📄 License
 
