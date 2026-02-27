@@ -80,26 +80,22 @@ public class RegisterPage {
     }
 
     public String getErrorMessage() {
-        page.waitForSelector(errorMsg,
-                new Page.WaitForSelectorOptions().setTimeout(10000));
+        page.waitForSelector(errorMsg, new Page.WaitForSelectorOptions().setTimeout(10000));
         return page.locator(errorMsg).innerText().trim();
     }
 
     public String getEmailErrorMessage() {
-        page.waitForSelector(errorMsgEmail,
-                new Page.WaitForSelectorOptions().setTimeout(10000));
+        page.waitForSelector(errorMsgEmail, new Page.WaitForSelectorOptions().setTimeout(10000));
         return page.locator(errorMsgEmail).innerText().trim();
     }
 
     public String getPWErrorMessage() {
-        page.waitForSelector(errorPWMsgEmail,
-                new Page.WaitForSelectorOptions().setTimeout(10000));
+        page.waitForSelector(errorPWMsgEmail, new Page.WaitForSelectorOptions().setTimeout(10000));
         return page.locator(errorPWMsgEmail).innerText().trim();
     }
 
     public String getCFPWErrorMessage() {
-        page.waitForSelector(errorCFPWMsgEmail,
-                new Page.WaitForSelectorOptions().setTimeout(10000));
+        page.waitForSelector(errorCFPWMsgEmail, new Page.WaitForSelectorOptions().setTimeout(10000));
         return page.locator(errorCFPWMsgEmail).innerText().trim();
     }
 

@@ -98,8 +98,7 @@ public class Bearstore_Register_TC10_VerifyRegisterFailedWithDifferenceConfirmPW
         logger.info("Expected error: {}", expected);
         logger.info("Actual error: {}", actualError);
 
-        Assert.assertTrue(actualError.contains(expected),
-                "Expected password error message not displayed. Actual: " + actualError);
+        Assert.assertTrue(actualError.contains(expected), "Expected password error message not displayed. Actual: " + actualError);
         logger.info("Verification passed!");
     }
 }

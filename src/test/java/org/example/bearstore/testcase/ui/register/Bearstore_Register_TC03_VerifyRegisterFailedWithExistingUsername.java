@@ -97,8 +97,7 @@ public class Bearstore_Register_TC03_VerifyRegisterFailedWithExistingUsername ex
         logger.info("Expected error: {}", expected);
         logger.info("Actual error: {}", actualError);
         
-        Assert.assertTrue(actualError.contains(expected),
-                "Expected error message not displayed. Actual: " + actualError);
+        Assert.assertTrue(actualError.contains(expected), "Expected error message not displayed. Actual: " + actualError);
         logger.info("Verification passed!");
     }
 }
