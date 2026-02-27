@@ -34,7 +34,7 @@ public class Bearstore_Register_TC06_VerifyRegisterFailedWithEmptyEmail extends 
 
         final String firstName = "tien";
         final String lastName = "dao";
-        final String email = ""; // 🔥 empty email
+        final String email = "";
         final String username = "tien_new_123";
         final String password = "tien123";
         final String confirmPassword = "tien123";
