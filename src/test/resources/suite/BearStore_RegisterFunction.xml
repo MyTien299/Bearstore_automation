@@ -1,7 +1,4 @@
 <suite name="BearStore Register Suite" parallel="false">
-    <listeners>
-        <listener class-name="org.example.bearstore.listeners.PlaywrightSetupListener"/>
-    </listeners>
 
     <test name="Register Function Test">
         <packages>

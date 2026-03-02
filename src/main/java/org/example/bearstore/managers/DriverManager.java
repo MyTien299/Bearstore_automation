@@ -1,6 +1,7 @@
 package org.example.bearstore.managers;
 
 import com.microsoft.playwright.*;
+import org.example.bearstore.constants.AppConfig;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,8 +15,6 @@ public class DriverManager {
 
     public static void initBrowser() {
         try {
-            // Ensure Playwright won't try to auto-download browsers from within the IDE test JVM.
-            // We'll require a manual install of Chromium (one-time) using the provided mvn command.
             Map<String, String> env = new HashMap<>(System.getenv());
             env.put("PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD", "1");
 
@@ -23,9 +22,9 @@ public class DriverManager {
             Playwright.CreateOptions options = new Playwright.CreateOptions().setEnv(env);
             DriverManager.playwright = Playwright.create(options);
 
-            // Launch Chromium (must be installed beforehand)
+            // Launch Chromium
             DriverManager.browser = DriverManager.playwright.chromium().launch(
-                    new BrowserType.LaunchOptions().setHeadless(false)
+                    new BrowserType.LaunchOptions().setHeadless(AppConfig.HEADLESS)
             );
             DriverManager.context = DriverManager.browser.newContext();
             DriverManager.page = DriverManager.context.newPage();
