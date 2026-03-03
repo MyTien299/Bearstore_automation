@@ -10,7 +10,7 @@ public class RegisterPage {
         this.page = page;
     }
 
-    // ===== LOCATORS =====
+    // LOCATORS
     private final String loginLink = "//i[contains(@class, 'menubar-icon')]";
     private final String registerLink = "//a[contains(@class, 'register-button')]";
 
@@ -34,7 +34,7 @@ public class RegisterPage {
     private final String errorCFPWMsgEmail = "#ConfirmPassword-error";
 
 
-    // ===== ACTIONS =====
+    // ACTIONS
 
     public void goToRegisterPage() {
         page.click(loginLink);

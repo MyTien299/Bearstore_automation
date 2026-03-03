@@ -28,6 +28,8 @@ public class DriverManager {
             );
             DriverManager.context = DriverManager.browser.newContext();
             DriverManager.page = DriverManager.context.newPage();
+            DriverManager.page.setDefaultTimeout(40000); // timeout for locator, click, fill
+            DriverManager.page.setDefaultNavigationTimeout(40000); // timeout for navigate
         } catch (Exception e) {
             System.err.println("Failed to initialize browser: " + e.getMessage());
             System.err.println("Make sure Chromium is installed by running:");
