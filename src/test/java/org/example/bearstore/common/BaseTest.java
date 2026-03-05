@@ -29,14 +29,4 @@ public class BaseTest {
     public void afterClass() {
         DriverManager.quit();
     }
-//    @BeforeMethod
-//    public void setUp() {
-//        DriverManager.initBrowser();
-//        DriverManager.getPage().navigate(AppConfig.BASE_URL);
-//    }
-//
-//    @AfterMethod
-//    public void tearDown() {
-//        DriverManager.quit();
-//    }
 }
