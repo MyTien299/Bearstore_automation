@@ -6,14 +6,12 @@ import org.example.bearstore.common.BaseTest;
 import org.example.bearstore.managers.DriverManager;
 import org.example.bearstore.steps.RegisterStep;
 import org.testng.annotations.BeforeMethod;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Epic("Authentication")
 @Feature("Register")
 public class Bearstore_Register_TC03_VerifyRegisterFailedWithExistingUsername extends BaseTest{
     private RegisterStep registerStep;
-
 
     @BeforeMethod
     public void setupTest() {
